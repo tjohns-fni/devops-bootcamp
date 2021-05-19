@@ -2,13 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('building') {
             steps {
-                echo 'Hello Muta'
+                echo 'Hello bob'
                 nodejs('bootcampnodejs 12 16 1') {
                     sh 'npm install'
                 }
-                echo 'Goodbye fatta'
+                echo 'Goodbye bob'
+            }
+        }
+        stage('testing') {
+            steps {
+                echo 'Hello terry'
+                nodejs('bootcampnodejs 12 16 1') {
+                    sh 'npm test'
+                }
+                echo 'Goodbye terry'
             }
         }
     }
