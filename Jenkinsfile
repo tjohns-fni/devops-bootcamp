@@ -20,5 +20,12 @@ pipeline {
                 echo 'Goodbye terry'
             }
         }
+        stage('scanning') {
+            steps {
+                echo 'Hello Suzy'
+                echo 'sonar-cube  something someting '
+                echo 'Goodbye Suzy'
+            }
+        }
     }
 }
