@@ -31,6 +31,7 @@
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "unleash-client": "^3.2.8"
   }
 }
